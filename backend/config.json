@@ -1,0 +1,23 @@
+{
+  "host_config": {
+    "host_url": "http://127.0.0.1:8008/",
+    "base_api": "api/",
+    "token": "f8d4cf230255e340e64b6ec2be72df5168814260",
+    "retry": true,
+    "retry_time": 30
+  },
+  "params": {
+    "detection_timeout": 0.3,
+    "user_timeout": 1.0,
+    "max_change": 10.0,
+    "detection_threshold": 0.7,
+    "recognition_threshold": 0.62
+  },
+  "weights": {
+    "facenet": "ml/weights/facenet_keras.h5",
+    "detector": "ml/weights/face_detector.caffemodel",
+    "detector_config": "ml/weights/deploy.prototxt",
+    "generator": "ml/weights/generator.h5",
+    "gendernet": "ml/weights/age_gender.hdf5"
+  }
+}
